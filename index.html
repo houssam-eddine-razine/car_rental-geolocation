@@ -20,6 +20,17 @@
             height: 70vh; /* Reducing height to fit map and speed display */
         }
     </style>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "ICy8AWWgmSmEjut-8",
+            });
+        })();
+</script>
 </head>
 <body>
     <div id="map"></div>
@@ -41,7 +52,7 @@
         // Tableau de données statiques sur les voitures
         var carData = [
             { id: 1, marque:"mercedes", lat: 31.6341600, long: -7.9999400, vitesse: 0, distance: 0, carburant: 15 },
-            { id: 2, marque:"audi", lat: 31.6000000, long: -7.9999400, vitesse: 0, distance: 0, carburant: 16 },
+            { id: 2, marque:"audi", lat: 31.6000000, long: -7.9999400, vitesse: 0, distance: 0, carburant: 0.04 },
             { id: 3, marque:"dacia", lat: 31.6900000, long: -7.8000000, vitesse: 0, distance: 0, carburant: 90 },
             { id: 4, marque:"volvo", lat: 31.7341600, long: -7.8999400, vitesse: 0, distance: 0, carburant: 50 },
             { id: 5, marque:"ford", lat: 31.6999999, long: -7.7799400, vitesse: 0, distance: 0, carburant: 44 },
@@ -79,14 +90,15 @@
 
         // Fonction pour envoyer une alerte par e-mail lorsque le carburant atteint 0
         function sendEmailAlert(car) {
+            
             var params = {
                 message: "Alerte: La voiture " + car.marque + " est à court de carburant!",
                 email: "hakmaoui01@gmail.com",
                 subject: "Alerte Carburant"
             };
 
-            const serviceID = "service_whlyzoo";
-            const templateID = "template_sgg5sed";
+            const serviceID = "service_t1khmia";
+            const templateID = "template_juw6awx";
             
             emailjs.send(serviceID, templateID, params)
             .then(res => {
@@ -146,13 +158,18 @@
                             car.distance += distance;
                             var fuelConsumption = calculateFuelConsumption(car.vitesse, distance);
                             car.carburant -= fuelConsumption;
+                           
+                            // Mise à jour de l'interface utilisateur pour refléter la distance parcourue
+                            carDistanceFields[index].value = car.distance.toFixed(2) + ' km';                           
 
                             // Vérifier si le carburant est épuisé
                             if (car.carburant <= 0) {
+                               
                                 // Envoyer une alerte par e-mail
                                 sendEmailAlert(car);
                                 // Arrêter le suivi de l'itinéraire
                                 clearInterval(interval);
+                               
                             }
                         }
                     }, 2000);
