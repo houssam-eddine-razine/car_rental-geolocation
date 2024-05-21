@@ -5,7 +5,9 @@ import com.example.car_rental.dto.UserDto;
 import com.example.car_rental.entity.User;
 import com.example.car_rental.enums.UserRole;
 import com.example.car_rental.repository.UserRepository;
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,18 +17,33 @@ public class AuthServiceImpl implements AuthService{
 
 
 
+    @PostConstruct
+    public void createAdminAccount() {
+        User adminAccount = userRepository.findByUserRole(UserRole.ADMIN);
+        if (adminAccount ==null ){
+            User newAdminAccount =new User();
+            newAdminAccount.setName("Admin");
+            newAdminAccount.setEmail("admin@test.com");
+            newAdminAccount.setPassword(new BCryptPasswordEncoder().encode("admin"));
+            newAdminAccount.setUserRole(UserRole.ADMIN);
+            userRepository.save(newAdminAccount);
+            System.out.println("Admin account created successfully");
+
+        }
+    }
+
 
     @Override
     public UserDto createCustomer(SignupRequest signupRequest){
         User user = new User();
         user.setName(signupRequest.getName());
         user.setEmail(signupRequest.getEmail());
-        user.setPassword(signupRequest.getPassword());
+        user.setPassword(new BCryptPasswordEncoder().encode(signupRequest.getPassword()));
         user.setUserRole(UserRole.CUSTOMER);
         User createdUser = userRepository.save(user);
         UserDto userDto = new UserDto();
         userDto.setId(createdUser.getId());
-        return null;
+        return userDto;
     }
 
     @Override
