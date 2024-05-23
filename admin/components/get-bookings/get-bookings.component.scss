@@ -1,0 +1,85 @@
+// Variables
+$primary-color: #108ee9;
+$background-color: #F8F8F8;
+$text-color: #333;
+$border-radius: 10px;
+$filter-padding: 50px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Styles
+.inner-content {
+  .dashboard-filter {
+    padding: 1rem;
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+
+      [formGroup] {
+        display: contents;
+      }
+
+      .filter-select-dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        nz-form-item {
+          margin-bottom: 1rem;
+          
+          nz-form-label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+          }
+
+          nz-select {
+            width: 100%;
+          }
+        }
+
+        .filterBtn {
+          align-self: flex-end;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.child {
+  background-color: $background-color;
+  padding-bottom: 30px;
+
+  nz-row {
+    margin-bottom: 2rem;
+  }
+
+  .profile {
+    height: 130px;
+    width: 220px;
+    border-radius: $border-radius;
+  }
+
+  h2 {
+    cursor: pointer;
+    color: $primary-color;
+  }
+
+  h5 {
+    margin-top: 1rem;
+    b {
+      font-weight: bold;
+    }
+  }
+
+  hr {
+    margin: 0.5rem 0;
+  }
+}

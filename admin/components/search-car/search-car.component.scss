@@ -1,0 +1,114 @@
+.inner-content {
+    margin: 20px auto 40px; /* Added margin-top and increased margin-bottom */
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+   .filterBtn {
+//     width: auto; /* Adjusted width to fit content */
+//     padding: 12px 20px;
+//     font-size: 16px;
+       border-radius: 5px;
+//     background-color: #1890ff;
+//     color: #fff;
+//     border: none;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
+//     margin-top: 20px; /* Added margin-top */
+  }
+
+.dashboard-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centered the button */
+    align-items: center;
+}
+
+.filter-grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter-select-dropdown {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+nz-spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nz-form-item {
+    margin-bottom: 15px;
+}
+
+nz-form-control {
+    width: 1200px;
+   
+    
+}
+
+
+
+
+.child {
+    padding: 20px; width: 780px;
+    background-color: white;
+    background: white;
+    box-shadow: 1px 1px 15px -7px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    padding: 30px; width: 780px;
+    background-color: white;
+    background: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    }
+i {
+    font-size: 20px;
+    font-weight: bold;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%); 
+    transform: translateY(-50%);
+}
+tr {
+    padding: 5px; 
+    
+    
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    }
+P {
+    margin-bottom: 0em;
+}
+hr {
+    margin-top: 10px; margin-bottom: 10px;
+}
+h2:hover {
+    text-decoration-line: underline;
+}
+.pagination {
+    width: 780px; 
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+    
