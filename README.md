@@ -9,6 +9,8 @@ Pour cela, notre projet de fin d'année consiste en la réalisation d'une applic
 - [Introduction générale](#introduction-générale)
 - [Architecture de l’Application](#Architecture-de-l-Application)
 - [Docker](#Docker)
+- [Frontend](#Frontend)
+- [Backend](#Backend)
 
 ## Introduction générale
 
