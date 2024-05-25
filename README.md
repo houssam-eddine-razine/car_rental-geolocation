@@ -306,7 +306,13 @@ Une fois que l'application est démarrée, vous pouvez vérifier qu'elle fonctio
 ```arduino
 http://localhost:8080
 ```
-## Video Demonstration du Projet
+## Video Démonstration du Projet
+
+Pour voir une démonstration de l'utilisation du projet, veuillez cliquer sur le lien ci-dessous : 
+
+https://github.com/houssam-eddine-razine/car_rental-geolocation/assets/94897329/75941470-1498-4dfa-a72b-fa8ce194fd75
+
+https://github.com/houssam-eddine-razine/car_rental-geolocation/assets/94897329/0abf108e-f570-4748-8200-6aa363feb926
 
 ## Contributeurs
 
