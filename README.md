@@ -17,6 +17,8 @@ C’est dans ce cadre que s’inscrit la réalisation de notre projet qui consis
 
 ## Architecture de l’Application
 
+![Architecture de l'application mobile](imagereadme/ANGUSPRING.png)
+
 L'architecture de notre application repose sur une séparation claire entre le front-end et le back-end, facilitant ainsi le développement, le déploiement et la maintenance. Voici les principaux composants :
 
 - **Front-End : Angular**
