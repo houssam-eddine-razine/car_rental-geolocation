@@ -39,7 +39,11 @@ L'architecture de notre application repose sur une séparation claire entre le f
 
 ## Dockerfile pour Spring Boot
 
+![Docker](imagereadme/5.jpg)
 
+## Dockerfile pour Angular
+
+![Docker](imagereadme/4.jpg)
 
 - **AI Constraints Solver** : Basé sur Optaplanner, comprenant trois services essentiels : `TimeTableConstraintProvider`, `TimeTableEasyScoreCalculator`, et `TimeTableSolverService`, optimisant les solutions de planification basées sur les contraintes et les préférences, tout en permettant un développement évolutif et des mécanismes de planification intelligents.
 
