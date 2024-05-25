@@ -37,25 +37,25 @@ L'architecture de notre application repose sur une séparation claire entre le f
     
 ## Docker
 
-## Dockerfile pour Spring Boot
+### Dockerfile pour Spring Boot
 
 ![Docker](imagereadme/5.jpg)
 
-## Dockerfile pour Angular
+### Dockerfile pour Angular
 
 ![Docker](imagereadme/4.jpg)
 
-## Build image
+### Build image
 
 ![Docker](imagereadme/2.jpg)
 
-## docker-compose.yml
+### docker-compose.yml
 
 Pour gérer les conteneurs Spring Boot et Angular.
 
 ![Docker](imagereadme/3.jpg)
 
-## Containers
+### Containers
 
 ![Docker](imagereadme/6.jpg)
 ![Docker](imagereadme/7.jpg)
