@@ -71,8 +71,6 @@ les technologies utilisées
 - Angular
 - Bootstrap
 
-### Structure Frontend du Projet 
-
 ### Dependences
 
 Liste des dependencies principales pour angular frontend.
@@ -120,8 +118,6 @@ les technologies utilisées
 
 - Spring Boot
 - MySQL
-
-### Structure Backend du Projet 
 
 ### Dependences
 ## Guide de démarrage
