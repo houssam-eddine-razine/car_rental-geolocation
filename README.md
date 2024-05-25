@@ -13,7 +13,7 @@ Pour cela, notre projet de fin d'année consiste en la réalisation d'une applic
 - [Backend](#Backend)
 - [Guide de démarrage](#Guide-de-démarrage)
 - [Video Demonstration du Projet](#Video-Demonstration-du-Projet)
-- [Contributeurs](#Contributeurs)Contributeurs
+- [Contributeurs](#Contributeurs)
 
 ## Introduction générale
 
@@ -120,7 +120,107 @@ les technologies utilisées
 - MySQL
 
 ### Dependences
+
+1. **Spring Boot Starter Test :**
+   - Objectif : Fournit les dépendances nécessaires pour écrire et exécuter des tests unitaires et d'intégration avec Spring Boot.
+   
+2. **Spring Boot Starter Security :**
+   - Objectif : Fournit les dépendances pour intégrer Spring Security dans votre application Spring Boot. Spring Security est utilisé pour la sécurité et l'authentification des applications.
+   
+3. **Spring Boot Starter Data JPA :**
+   - Objectif : Fournit les dépendances pour intégrer Spring Data JPA dans votre application Spring Boot. Spring Data JPA simplifie l'interaction avec les bases de données relationnelles en fournissant une couche d'abstraction au-dessus de JPA (Java Persistence API).
+   
+4. **Spring Boot Starter Web :**
+   - Objectif : Fournit les dépendances pour créer des applications web avec Spring Boot. Il inclut des bibliothèques pour le développement web, telles que Spring MVC et Tomcat.
+   
+5. **JWT (JSON Web Token) :**
+   - Objectif : Les dépendances liées à JWT sont utilisées pour la gestion des tokens JWT dans le cadre de l'authentification et de l'autorisation. Cela permet d'implémenter des mécanismes d'authentification basés sur des tokens.
+   
+6. **Spring Security Test :**
+   - Objectif : Cette dépendance fournit les outils de test pour les applications sécurisées avec Spring Security. Elle est utilisée pour écrire et exécuter des tests pour les configurations de sécurité.
+   
+7. **PDFBox :**
+   - Objectif : PDFBox est une bibliothèque Java pour travailler avec des fichiers PDF. Cette dépendance est utilisée pour la manipulation de fichiers PDF dans l'application.
+   
+8. **Commons Lang :**
+   - Objectif : Commons Lang est une bibliothèque Apache Commons qui fournit des utilitaires pour travailler avec des chaînes, des nombres, des tableaux, etc. dans Java.
+   
+9. **MySQL Connector :**
+   - Objectif : Cette dépendance fournit le pilote JDBC pour se connecter à une base de données MySQL à partir de l'application.
+   
+10. **Google Android JSON :**
+    - Objectif : Cette dépendance fournit des classes pour travailler avec JSON dans le cadre du projet Android de Google.
+Voici un exemple d'un extrait de fichier `pom.xml` utilisé dans ce projet :
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>car_rental</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>car_rental</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+		<!-- Les dépendances sont listées ici -->
+	</dependencies>
+
+	<build>
+		<!-- Les plugins de construction sont listés ici -->
+	</build>
+
+</project>
+```
 ## Guide de démarrage
+Ce guide vous aidera à démarrer le projet localement en suivant les étapes ci-dessous.
+
+### Installation des Dépendances Frontend (Angular)
+
+Assurez-vous d'avoir Node.js installé sur votre système. Accédez au répertoire du projet frontend dans votre terminal et exécutez la commande suivante pour installer les dépendances :
+
+```bash
+npm install
+```
+
+### Démarrage du Serveur de Développement
+Une fois l'installation des dépendances terminée, exécutez la commande suivante pour démarrer le serveur de développement Angular :
+
+```bash
+ng serve
+```
+
+### Accès à l'Application
+Après avoir démarré le serveur, accédez à l'application dans votre navigateur en visitant l'URL suivante :
+
+```arduino
+http://localhost:4200
+```
+
+### Configuration de la Base de Données
+Assurez-vous d'avoir MySQL installé et en cours d'exécution sur votre système. Configurez les détails de connexion à la base de données dans le fichier src/main/resources/application.properties de votre projet backend.
+
+### Compilation et Exécution
+Assurez-vous d'avoir Maven installé sur votre système. Accédez au répertoire du projet backend dans votre terminal et exécutez la commande suivante pour compiler et exécuter l'application Spring Boot :
+
+```bash
+mvn spring-boot:run
+```
+### Vérification
+Une fois que l'application est démarrée, vous pouvez vérifier qu'elle fonctionne en accédant à l'URL suivante dans votre navigateur :
+
+```arduino
+http://localhost:8080
+```
 ## Video Demonstration du Projet
 
 ## Contributeurs
