@@ -59,3 +59,11 @@ Pour gérer les conteneurs Spring Boot et Angular.
 
 ![Docker](imagereadme/6.jpg)
 ![Docker](imagereadme/7.jpg)
+
+## Frontend
+
+les technologies utilisées 
+- Angular
+- Bootstrap
+
+### Structure Frontend du Projet
