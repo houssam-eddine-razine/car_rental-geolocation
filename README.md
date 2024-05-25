@@ -11,6 +11,9 @@ Pour cela, notre projet de fin d'année consiste en la réalisation d'une applic
 - [Docker](#Docker)
 - [Frontend](#Frontend)
 - [Backend](#Backend)
+- [Guide de démarrage](#Guide-de-démarrage)
+- [Video Demonstration du Projet](#Video-Demonstration-du-Projet)
+- [Contributeurs](#Contributeurs)Contributeurs
 
 ## Introduction générale
 
@@ -121,3 +124,14 @@ les technologies utilisées
 ### Structure Backend du Projet 
 
 ### Dependences
+## Guide de démarrage
+## Video Demonstration du Projet
+
+## Contributeurs
+
+Nous tenons à remercier les contributeurs suivants qui ont participé à ce projet :
+ - Ayda Aboufaresse 
+ - Houssameddine Razine
+ - Khadija Ezzahidi
+ - Ayoub Hakmaoui
+ - Mohamed-elhabib Tablioua
