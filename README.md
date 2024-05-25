@@ -45,6 +45,17 @@ L'architecture de notre application repose sur une séparation claire entre le f
 
 ![Docker](imagereadme/4.jpg)
 
-- **AI Constraints Solver** : Basé sur Optaplanner, comprenant trois services essentiels : `TimeTableConstraintProvider`, `TimeTableEasyScoreCalculator`, et `TimeTableSolverService`, optimisant les solutions de planification basées sur les contraintes et les préférences, tout en permettant un développement évolutif et des mécanismes de planification intelligents.
+## Build image
 
-Cette approche assure une communication efficace, une évolutivité et une séparation des préoccupations, facilitant ainsi la gestion et l'expansion des fonctionnalités de l'application web.
+![Docker](imagereadme/2.jpg)
+
+## docker-compose.yml
+
+Pour gérer les conteneurs Spring Boot et Angular.
+
+![Docker](imagereadme/3.jpg)
+
+## Containers
+
+![Docker](imagereadme/6.jpg)
+![Docker](imagereadme/7.jpg)
